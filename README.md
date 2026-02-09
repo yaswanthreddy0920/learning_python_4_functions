@@ -1,49 +1,56 @@
-# learning_python_4_functions
-#loops and conditionals. Loops are used to repeat a block of code multiple times. Conditionals are used to execute a block of code only if a certain condition is met.
-name = "Yaswanth"
-for a in name:    #for loop
-    print(a, end="_")
-    print(a)
-    if a == "n":
-        print("found")
-players_india = ["virat", "rohit", "dhoni", "sachin", "sehwag"]
-for player in players_india:
-    print(player)
-    for i in player :
-     print(i)
-x=0
-while (x<5):
-    print(x)
-    x=x+1 #while loop
-for y in range(11):
-    if y==5:
-        break
-    print("5 x",y+1,"=",5*(y+1))
+Project Overview
+This repository contains my initial learning notes and code snippets for Python 3. As a BBA student specializing in BI and Data Analytics, I am focusing on mastering Python to automate data workflows and perform complex business analyses.
 
-i=0
-while True: #infinite loop 
-    print(i)
-    i=i+1
-    if (i%100==0):
-          break
-a = 10
-b = 12
-def calcgmean(a,b): #function is used to perform a specific task. def is used to define a function.
-    mean = a*b/(a+b)
-    print (mean)
-c= 20
-d= 30
-calcgmean(c,d) 
-def average(*numbers):
-    sum = 0
-    for i in numbers:
-        sum = sum + i
-    return sum / len(numbers)
-a=int(input("Enter science GPA: "))
-b=int(input("Enter maths GPA: "))
-c=int(input("Enter english GPA: "))
-d=int(input("Enter social GPA: "))
-average(5, 6, 7, 8)
-def fullname(**names):
-    print("Hello,", names["fname"], names["mname"], names["lname"],"\nyour GPA is", average(a, b, c, d))  #function with arguments
-fullname(fname ="Yaswanth Reddy", lname = "yeddula", mname ="")
+🛠 Concepts Covered
+This module focuses on the foundational syntax required to handle data before moving into advanced libraries like Pandas.
+
+1. Data Types & Variables
+Integers & Floats: Handling numerical data for calculations.
+
+Strings: Managing text data.
+
+Complex Numbers: Using the complex() constructor.
+
+Booleans: Logical True/False for conditional business logic.
+
+2. Basic Arithmetic & Operators
+I explored the standard mathematical operations, including:
+
+Floor Division (//): Useful for rounding down results.
+
+Modulus (%): Finding remainders.
+
+Exponentiation (**): Power calculations.
+
+BODMAS: Understanding the order of operations in Python.
+
+3. String Manipulation (The "Analyst" Essentials)
+Data is often "dirty." Mastering string functions is the first step toward Data Cleaning.
+
+Slicing & Indexing: Accessing specific parts of a string (e.g., b[0:3]).
+
+Cleaning Functions: * .rstrip() to remove unwanted trailing symbols (like "!!!").
+
+.split() to turn a single string into a list (useful for CSV processing).
+
+.replace() for data standardization.
+
+Boolean Checks: Using .isalnum() and .islower() to validate data input.
+
+🚀 How to Use
+Clone the repo:
+
+Bash
+
+git clone https://github.com/[Your-Username]/learning_python_1_datastructures.git
+Run the script:
+
+Bash
+
+python learning_python_1.py
+📈 Next Steps
+[ ] Master Lists and Tuples (indexing, nesting).
+
+[ ] Learn Dictionary manipulation (essential for JSON data).
+
+[ ] Move into Conditional Statements (if/else) to build basic logic.
